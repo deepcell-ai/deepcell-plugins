@@ -1,0 +1,35 @@
+{
+  "name": "deepcell",
+  "owner": {
+    "name": "DeepCell",
+    "email": "hello@deepcell.net",
+    "url": "https://beta.deepcell.net"
+  },
+  "metadata": {
+    "description": "DeepCell plugins for Claude Code — build models and memos that carry their assumptions, evidence, and math.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "deepcell",
+      "source": "./plugins/deepcell",
+      "description": "Turn Claude Code into a DeepCell orchestrator: build .deepcell models and memos through the deepcell CLI, with a worker agent for delegated work.",
+      "category": "productivity",
+      "keywords": [
+        "deepcell",
+        "financial-modeling",
+        "forecast",
+        "valuation",
+        "spreadsheet",
+        "reasoning"
+      ],
+      "author": {
+        "name": "DeepCell",
+        "email": "hello@deepcell.net"
+      },
+      "homepage": "https://beta.deepcell.net/product/claude-code",
+      "repository": "https://github.com/fimo-copilot/deepcell-plugins",
+      "license": "MIT"
+    }
+  ]
+}

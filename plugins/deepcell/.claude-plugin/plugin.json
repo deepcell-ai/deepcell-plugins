@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "deepcell",
+  "displayName": "DeepCell",
+  "version": "1.0.0",
+  "description": "Build .deepcell models and memos — work that keeps its assumptions, evidence, and math — by driving the deepcell CLI from Claude Code.",
+  "author": {
+    "name": "DeepCell",
+    "email": "hello@deepcell.net",
+    "url": "https://beta.deepcell.net"
+  },
+  "homepage": "https://beta.deepcell.net/product/claude-code",
+  "repository": "https://github.com/fimo-copilot/deepcell-plugins",
+  "license": "MIT",
+  "keywords": [
+    "deepcell",
+    "financial-modeling",
+    "forecast",
+    "valuation",
+    "spreadsheet",
+    "reasoning"
+  ]
+}
