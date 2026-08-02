@@ -28,7 +28,7 @@
         "email": "hello@deepcell.net"
       },
       "homepage": "https://beta.deepcell.net/product/claude-code",
-      "repository": "https://github.com/fimo-copilot/deepcell-plugins",
+      "repository": "https://github.com/deepcell-ai/deepcell-plugins",
       "license": "MIT"
     }
   ]

@@ -7,7 +7,7 @@ its conclusions — and Claude drives it through the `deepcell` CLI.
 ## Install
 
 ```
-/plugin marketplace add fimo-copilot/deepcell-plugins
+/plugin marketplace add deepcell-ai/deepcell-plugins
 /plugin install deepcell@deepcell
 /reload-plugins
 ```

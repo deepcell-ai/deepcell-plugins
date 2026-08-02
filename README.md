@@ -1,7 +1,7 @@
 # DeepCell plugins for Claude Code
 
 ```
-/plugin marketplace add fimo-copilot/deepcell-plugins
+/plugin marketplace add deepcell-ai/deepcell-plugins
 /plugin install deepcell@deepcell
 ```
 
