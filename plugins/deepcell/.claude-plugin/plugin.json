@@ -3,7 +3,7 @@
   "name": "deepcell",
   "displayName": "DeepCell",
   "version": "1.0.0",
-  "description": "Build .deepcell models and memos — work that keeps its assumptions, evidence, and math — by driving the deepcell CLI from Claude Code.",
+  "description": "Build .deepcell models and memos that record the reasoning, the calculations, the document and the deck together with the links between them — so when an assumption changes, you follow the connections and see which conclusions still hold. Share the result as a link that opens the linked work in a browser, or export it as editable Excel, Word and PowerPoint. Drives the deepcell CLI from Claude Code.",
   "author": {
     "name": "DeepCell",
     "email": "hello@deepcell.net",

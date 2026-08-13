@@ -1,14 +1,26 @@
-# DeepCell plugins for Claude Code
+# DeepCell plugins
+
+## Claude Code
 
 ```
 /plugin marketplace add deepcell-ai/deepcell-plugins
 /plugin install deepcell@deepcell
 ```
 
-The plugin drives the `deepcell` CLI rather than bundling it. Install it and
-sign in first — full instructions, including whether to use the CLI or the MCP
-server, are at <https://beta.deepcell.net/product/claude-code>, and in plain
-markdown for an agent at <https://beta.deepcell.net/product/claude-code.md>.
+## Any Agent Plugins Spec client
+
+This repository root is also a plugin conforming to
+[Agent Plugins Specification v1.0.0](https://agent-plugins.org) — `plugin.json`
+and `skills/`. The spec does not define an install command, so point your
+client at this repository the way it takes a plugin directory. The same skill is
+also at `plugins/deepcell/` for clients that address a subdirectory; the two
+copies are identical.
+
+The plugin ships one skill and no MCP server: it drives the `deepcell` CLI
+rather than bundling it, so install the CLI first. Full instructions are at
+<https://beta.deepcell.net/product/for-agent>, in plain markdown for an agent at
+<https://beta.deepcell.net/product/for-agent.md>, and for Claude Code
+specifically at <https://beta.deepcell.net/product/claude-code>.
 
 ## About this repository
 

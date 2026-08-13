@@ -6,14 +6,14 @@
     "url": "https://beta.deepcell.net"
   },
   "metadata": {
-    "description": "DeepCell plugins for Claude Code — build models and memos that carry their assumptions, evidence, and math.",
+    "description": "DeepCell plugins for Claude Code — build models and memos that record the reasoning, the calculations, the document and the deck together with the links between them, so when an assumption changes you can see which conclusions still hold.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "deepcell",
       "source": "./plugins/deepcell",
-      "description": "Turn Claude Code into a DeepCell orchestrator: build .deepcell models and memos through the deepcell CLI, with a worker agent for delegated work.",
+      "description": "Turn Claude Code into a DeepCell orchestrator: build .deepcell models and memos through the deepcell CLI — every conclusion stays linked to the assumptions, evidence and calculations it rests on — with a worker agent for delegated work.",
       "category": "productivity",
       "keywords": [
         "deepcell",

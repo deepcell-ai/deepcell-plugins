@@ -1,10 +1,21 @@
-# DeepCell for Claude Code
+# DeepCell for agents
 
-Turns Claude Code into a DeepCell orchestrator. The work lands in a `.deepcell`
-file — a model or a memo that keeps the assumptions, evidence, and math behind
-its conclusions — and Claude drives it through the `deepcell` CLI.
+Turns an agent into a DeepCell orchestrator, driving the `deepcell` CLI.
+
+The work lands in a `.deepcell` file, which records four things and how they
+connect: the reasoning behind a conclusion, the calculation under a number, the
+document that explains it, and the deck that delivers it. Recording the
+connections is what makes the file worth having later — when an assumption turns
+out to be wrong, you follow the links from it to whatever rests on it and see
+which conclusions still hold, instead of rebuilding the analysis to find out.
+
+Nobody has to hold the file to read the work. Share a link that opens it in a
+browser with the connections intact, or export editable Excel, Word and
+PowerPoint from it — the workbook with live formulas rather than pasted values.
 
 ## Install
+
+Claude Code:
 
 ```
 /plugin marketplace add deepcell-ai/deepcell-plugins
@@ -12,10 +23,37 @@ its conclusions — and Claude drives it through the `deepcell` CLI.
 /reload-plugins
 ```
 
+Any client implementing [Agent Plugins Specification
+v1.0.0](https://agent-plugins.org) reads the same directory: `plugin.json` and
+`skills/`. The spec defines no install command — point your client at the
+plugin directory the way it takes one.
+
 The plugin drives the `deepcell` CLI rather than bundling it, so install that
-and sign in — the steps are at <https://beta.deepcell.net/product/claude-code>,
-or hand your agent <https://beta.deepcell.net/product/claude-code.md> and let it
-follow them. Then just say what you want built.
+first — the steps are at <https://beta.deepcell.net/product/for-agent>, or hand
+your agent <https://beta.deepcell.net/product/for-agent.md> and let it follow
+them. Claude Code users have a page of their own at
+<https://beta.deepcell.net/product/claude-code>. Then just say what you want
+built.
+
+## Two manifests, one plugin
+
+This directory is read by two plugin formats, and neither reads the other's
+manifest:
+
+| File | Read by | Ignored by |
+| --- | --- | --- |
+| `.claude-plugin/plugin.json` | Claude Code | spec clients |
+| `plugin.json` | Agent Plugins Spec clients | Claude Code |
+
+`skills/` is the same fixed location in both, so the substance is shared and
+only the manifests differ. The spec one is generated from the Claude Code one,
+so a version bump cannot land on half of it. Claude Code is not a conformant
+spec client — its own validator requires `.claude-plugin/` — which is why both
+files exist rather than just the portable one.
+
+`agents/` is a Claude Code concept; the spec has no agent component and ignores
+the directory, so a spec client gets the skill and does the work itself. The
+skill says so.
 
 ## What's in it
 
@@ -40,9 +78,13 @@ fall out of sync. Edit the Python module, regenerate, commit both.
 
 ## CLI or MCP?
 
-Claude Code has a shell, so it uses the CLI and gets every command. The MCP
-server is for agents that have no shell (claude.ai, Manus, and other web
-platforms); it blocks sign-in, the exports, and the sync commands. Setup for
-that path is at <https://beta.deepcell.net/product/connect>.
+The plugin is CLI-only and ships no `mcp.json`, in either format. An agent with
+a shell uses the CLI and gets every command; the MCP server blocks sign-in, the
+exports, and the sync commands, so a plugin fronted by it would be a smaller
+DeepCell than the same plugin fronted by the CLI.
 
-Full write-up: <https://beta.deepcell.net/product/claude-code>
+The MCP server is still there for agents that have no shell at all — claude.ai,
+Manus, and other web platforms — but that is a hosted connector rather than a
+package. Setup is at <https://beta.deepcell.net/product/connect>.
+
+Full write-up: <https://beta.deepcell.net/product/for-agent>
