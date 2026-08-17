@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "deepcell",
   "version": "1.0.0",
-  "description": "Build .deepcell models and memos that record the reasoning, the calculations, the document and the deck together with the links between them — so when an assumption changes, you follow the connections and see which conclusions still hold. Share the result as a link that opens the linked work in a browser, or export it as editable Excel, Word and PowerPoint. Drives the deepcell CLI.",
+  "description": "Put your ideas, calculations, documents, and slides into .deepcell files. These files remember how all the parts are connected. If you change one idea, you can quickly see how it affects the whole work. Right now, the way to open the file is by clicking the link the agent gives you. You can also turn it into Excel, Word, or PowerPoint files that you can still edit. Drives the deepcell CLI.",
   "author": {
     "name": "DeepCell",
     "email": "hello@deepcell.net",

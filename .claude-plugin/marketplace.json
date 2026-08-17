@@ -13,7 +13,7 @@
     {
       "name": "deepcell",
       "source": "./plugins/deepcell",
-      "description": "Turn Claude Code into a DeepCell orchestrator: build .deepcell models and memos through the deepcell CLI — every conclusion stays linked to the assumptions, evidence and calculations it rests on — with a worker agent for delegated work.",
+      "description": "Put your ideas, calculations, documents, and slides into .deepcell files. These files remember how all the parts are connected. If you change one idea, you can quickly see how it affects the whole work. Right now, the way to open the file is by clicking the link the agent gives you. You can also turn it into Excel, Word, or PowerPoint files that you can still edit.",
       "category": "productivity",
       "keywords": [
         "deepcell",
