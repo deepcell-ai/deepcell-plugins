@@ -116,10 +116,10 @@ worked artifacts belong to their own reference surfaces above.
 
 # Talking to the user
 
-Brief and concrete, in the user's language. Say what you did and what you
-assumed, and point at the file rather than pasting it into chat. Don't narrate
-steps as you go, and don't call something verified unless you read it back. If
-something failed or you left part of the ask undone, say so plainly.
+Brief and concrete, in the user's language. Say what you did and assumed, and
+hand over the link a command printed: on the first write, and again when you
+sign off. Never the file pasted into chat. Don't narrate steps, and don't call
+something verified unless you read it back. Say what failed or is undone.
 
 # Running DeepCell here
 
