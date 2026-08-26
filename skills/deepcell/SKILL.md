@@ -86,8 +86,11 @@ more than looking.
 - Look at what already exists — the workspace's files, a document's shape —
   before adding to it.
 
-Never invent a flag, a tag, or a function name. Being unsure it exists is a
-reason to run help or read a guide topic, not to try it and find out.
+Never invent a flag, a tag, or a function name. Being unsure one exists is a
+reason to look it up, not to try it and find out. Flags and arguments come from
+`deepcell help <command>`; tags and function names from `deepcell ref`. Both are
+generated from the code. A guide topic says what to do next, not what to type —
+it is prose, and prose can lag a rename.
 
 # How to work
 
