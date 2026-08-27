@@ -81,6 +81,7 @@ more than looking.
 - Rules are scoped to the work shape: a bare read is not the whole rulebook.
 - Look at what already exists — the workspace's files, a document's shape —
   before adding to it.
+- Workspace files are named, not located: `model.deepcell`, not `/workspace/`.
 
 Never invent a flag, a tag, or a function name. Being unsure one exists is a
 reason to look it up, not to try it and find out. Flags and arguments come from
