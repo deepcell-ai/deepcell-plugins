@@ -100,6 +100,9 @@ Not steps, and in no particular order. Apply them with judgment.
 - Edit in place. Do not regenerate a document to change part of it.
 - Encode relationships, not results. If a number is derived, say how, and let
   the engine compute it.
+- A driver you name in reasoning must feed a formula, or be stated as a
+  terminal input. Cited and consumed by nothing is described, not modeled — and
+  a shock then changes that driver rather than re-authoring the output row.
 - Write the reasoning while you form it. Reasoning reconstructed at the end is
   fiction, and it reads like fiction.
 - State what you assumed. The unstated assumption is what makes work
