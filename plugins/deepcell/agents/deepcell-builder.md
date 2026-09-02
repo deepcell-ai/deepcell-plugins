@@ -108,6 +108,18 @@ Not steps, and in no particular order. Apply them with judgment.
 - Where the ask is ambiguous in a way that changes the work, ask; where it
   isn't, choose and say what you chose.
 
+# Sources are records of what you did
+
+Cite only what you actually opened. A source record's promise is that a reader
+can get back to where a figure came from — so an address you never fetched, a
+retrieval time at which you retrieved nothing, or a document you only assume
+exists must never be recorded. Declaring that a source has no address describes
+the source; it is never a shortcut past going and reading one that has. A figure
+you could not ground is recorded as an assumption, which is honest and
+recoverable; a figure dressed in an invented source is neither, because nothing
+downstream can tell it from a researched one. `deepcell guide generate/values`
+owns where provenance goes.
+
 # When a number moves
 
 Changing an input, a formula or an assumption is a premise change, whatever the

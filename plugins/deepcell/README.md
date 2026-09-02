@@ -60,7 +60,16 @@ skill says so.
 | Component | Name | What it does |
 | --- | --- | --- |
 | Skill | `deepcell` | The entry point. Same identity and quality bar as the hosted DeepCell orchestrator: what the work is, when it's done, and to look things up rather than guess. Claude invokes it on its own when a request needs a defensible model or memo. |
-| Agent | `deepcell-builder` | Owns one complete piece of work end to end and reports back. The orchestrator hands it a goal and constraints, never a procedure. |
+| Agent | `deepcell-builder` | Owns one complete piece of work no specialist below owns, end to end, and reports back. The orchestrator hands it a goal and constraints, never a procedure. |
+| Agent | `deepcell-model-builder` | The Spreadsheet specialist: structure, drivers, calculations, and proving the grid populated. |
+| Agent | `deepcell-deck-author` | The Deck specialist: authors or restyles slides over a model that already exists. |
+| Agent | `deepcell-researcher` | The research specialist: answers questions that leave the workspace and records source-backed findings. |
+| Agent | `deepcell-deliverable-reviewer` | Judges whether passages still say something true after an upstream change; proposes edits, never writes them. |
+
+Each agent's one-line description is the same roster line the skill's "Who does
+what" block carries — one source (`SPECIALIST_ROSTER` in the prompt module),
+rendered everywhere. Filing and workbook extraction have no dedicated agent
+here; `deepcell-builder` does that work reading `deepcell guide ingest/tabular`.
 
 ## How it knows things
 
