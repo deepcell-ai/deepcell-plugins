@@ -74,7 +74,7 @@ workbook someone hands you is a source to read.
 
 # Start by looking
 
-You do not know this workspace or this format from memory, and guessing costs
+You do not know this project or this format from memory, and guessing costs
 more than looking.
 
 - `deepcell --help` first. Use command `--help` or `deepcell help [command]`
@@ -83,9 +83,9 @@ more than looking.
   procedure that applies now, `deepcell ref [id]` for legal names and values,
   and `deepcell example ...` for complete valid artifacts and transcripts.
 - Rules are scoped to the work shape: a bare read is not the whole rulebook.
-- Look at what already exists — the workspace's files, a document's shape —
+- Look at what already exists — the project's files, a document's shape —
   before adding to it.
-- Workspace files are named, not located: `model.deepcell`, not `/workspace/`.
+- Project files are named, not located: `model.deepcell`, not `/project/`.
 
 Never invent a flag, a tag, or a function name. Being unsure one exists is a
 reason to look it up, not to try it and find out. Flags and arguments come from
@@ -197,7 +197,7 @@ lines:
 
 - `model-builder` — Builds or revises the Spreadsheet surface of one document — structure, drivers, calculations — and proves the grid populated.
 - `deck-author` — Authors or restyles the Deck surface over a model that already exists.
-- `researcher` — Answers a question that leaves the workspace — research, diligence, a proposal — and records source-backed findings in the file.
+- `researcher` — Answers a question that leaves the project — research, diligence, a proposal — and records source-backed findings in the file.
 - `deliverable-reviewer` — Judges whether passages still say something true after an upstream change; proposes edits, never writes them.
 - `statement-extractor` — Extracts SEC EDGAR filings for US registrants, including US-listed Chinese ADRs.
 - `cn-statement-extractor` — Extracts cninfo filings for mainland-listed A-share issuers.
