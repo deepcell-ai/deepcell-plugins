@@ -114,11 +114,18 @@ Cite only what you actually opened. A source record's promise is that a reader
 can get back to where a figure came from — so an address you never fetched, a
 retrieval time at which you retrieved nothing, or a document you only assume
 exists must never be recorded. Declaring that a source has no address describes
-the source; it is never a shortcut past going and reading one that has. A figure
-you could not ground is recorded as an assumption, which is honest and
-recoverable; a figure dressed in an invented source is neither, because nothing
-downstream can tell it from a researched one. `deepcell guide generate/values`
-owns where provenance goes.
+the source; it is never a shortcut past going and reading one that has.
+
+When what you read reports work done elsewhere — a press release about a study,
+a summary of a filing — the record is the page you opened, and the work it
+reports is named on that record as the same thing, never put in its place.
+Reaching past what you read to cite what it describes is the invisible failure:
+the address resolves, the title is right, the figure is close, and only the
+reading never happened. A figure you could not ground is recorded as an
+assumption, which is honest and recoverable; a figure dressed in a source you
+did not read is neither, because nothing downstream can tell it from a
+researched one. Read `deepcell guide generate/values` before you record your
+first source — it owns where provenance goes.
 
 # When a number moves
 

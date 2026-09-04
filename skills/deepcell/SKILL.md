@@ -118,11 +118,18 @@ Cite only what you actually opened. A source record's promise is that a reader
 can get back to where a figure came from — so an address you never fetched, a
 retrieval time at which you retrieved nothing, or a document you only assume
 exists must never be recorded. Declaring that a source has no address describes
-the source; it is never a shortcut past going and reading one that has. A figure
-you could not ground is recorded as an assumption, which is honest and
-recoverable; a figure dressed in an invented source is neither, because nothing
-downstream can tell it from a researched one. `deepcell guide generate/values`
-owns where provenance goes.
+the source; it is never a shortcut past going and reading one that has.
+
+When what you read reports work done elsewhere — a press release about a study,
+a summary of a filing — the record is the page you opened, and the work it
+reports is named on that record as the same thing, never put in its place.
+Reaching past what you read to cite what it describes is the invisible failure:
+the address resolves, the title is right, the figure is close, and only the
+reading never happened. A figure you could not ground is recorded as an
+assumption, which is honest and recoverable; a figure dressed in a source you
+did not read is neither, because nothing downstream can tell it from a
+researched one. Read `deepcell guide generate/values` before you record your
+first source — it owns where provenance goes.
 
 # When a number moves
 
@@ -181,13 +188,11 @@ a reader trusts and cannot check.
 
 # Delegating
 
-Delegation here means this plugin's agents, launched with the Task tool,
-if your host provides subagents. Each roster name below is installed with
-a `deepcell-` prefix, and `general-purpose` is `deepcell-builder`. The
-extractors are the exception — filings and workbook ingestion have no
-dedicated agent here, so hand that work to `deepcell-builder` with
-`deepcell guide ingest/tabular`. If your host has no subagents, do the
-work yourself in the same order.
+Delegation here means this plugin's agents, launched with the Task tool
+under the exact names below, if your host provides subagents. Filings and
+workbook ingestion have no dedicated agent here, so those rows name the
+builder: hand it that work with `deepcell guide ingest/tabular`. If your
+host has no subagents, do the work yourself in the same order.
 
 You coordinate. Hand a self-contained piece of work to a subagent rather than
 doing it inline; keep small edits to an open document for yourself.
@@ -195,14 +200,14 @@ doing it inline; keep small edits to an open document for yourself.
 Who does what — the task tool, where your host has one, carries these same
 lines:
 
-- `model-builder` — Builds or revises the Spreadsheet surface of one document — structure, drivers, calculations — and proves the grid populated.
-- `deck-author` — Authors or restyles the Deck surface over a model that already exists.
-- `researcher` — Answers a question that leaves the project — research, diligence, a proposal — and records source-backed findings in the file.
-- `deliverable-reviewer` — Judges whether passages still say something true after an upstream change; proposes edits, never writes them.
-- `statement-extractor` — Extracts SEC EDGAR filings for US registrants, including US-listed Chinese ADRs.
-- `cn-statement-extractor` — Extracts cninfo filings for mainland-listed A-share issuers.
-- `excel-extractor` — Converts an uploaded workbook into a connected document, preserving its formula logic.
-- `general-purpose` — Owns any self-contained piece of work no specialist above owns, end to end.
+- `deepcell:deepcell-model-builder` — Builds or revises the Spreadsheet surface of one document — structure, drivers, calculations — and proves the grid populated.
+- `deepcell:deepcell-deck-author` — Authors or restyles the Deck surface over a model that already exists.
+- `deepcell:deepcell-researcher` — Answers a question that leaves the project — research, diligence, a proposal — and records source-backed findings in the file.
+- `deepcell:deepcell-deliverable-reviewer` — Judges whether passages still say something true after an upstream change; proposes edits, never writes them.
+- `deepcell:deepcell-builder` — Extracts SEC EDGAR filings for US registrants, including US-listed Chinese ADRs.
+- `deepcell:deepcell-builder` — Extracts cninfo filings for mainland-listed A-share issuers.
+- `deepcell:deepcell-builder` — Converts an uploaded workbook into a connected document, preserving its formula logic.
+- `deepcell:deepcell-builder` — Owns any self-contained piece of work no specialist above owns, end to end.
 
 A brief is a goal and its constraints, never a procedure. Five things: the
 goal, the file it lives in, what must not change, what is out of scope, and
@@ -226,6 +231,6 @@ you accept it.
 Each specialist reads its topics before it writes — and so do you, when a
 role falls to you instead of a subagent:
 
-- `model-builder`: `deepcell guide orient/concepts`, `deepcell guide generate/structure`, `deepcell guide generate/calcs`, `deepcell guide verify/query-back`
-- `deck-author`: `deepcell guide present/decks`, `deepcell guide present/deck-style`, `deepcell guide present/charts`
-- `researcher`: `deepcell guide generate/values`, `deepcell guide revise/reasoning`
+- `deepcell:deepcell-model-builder`: `deepcell guide orient/concepts`, `deepcell guide generate/structure`, `deepcell guide generate/calcs`, `deepcell guide verify/query-back`
+- `deepcell:deepcell-deck-author`: `deepcell guide present/decks`, `deepcell guide present/deck-style`, `deepcell guide present/charts`
+- `deepcell:deepcell-researcher`: `deepcell guide generate/values`, `deepcell guide revise/reasoning`

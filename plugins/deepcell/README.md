@@ -71,6 +71,12 @@ what" block carries — one source (`SPECIALIST_ROSTER` in the prompt module),
 rendered everywhere. Filing and workbook extraction have no dedicated agent
 here; `deepcell-builder` does that work reading `deepcell guide ingest/tabular`.
 
+Claude Code launches a plugin's agents as `<plugin>:<agent>`, so the name the
+Task tool accepts is `deepcell:deepcell-researcher`, not `deepcell-researcher`
+and not `researcher`. The skill's roster prints exactly those names; a test
+(`test_skill_roster_names_are_agents_the_plugin_ships`) keeps them the names
+this directory ships.
+
 ## How it knows things
 
 Three layers, and the plugin owns only the first:
