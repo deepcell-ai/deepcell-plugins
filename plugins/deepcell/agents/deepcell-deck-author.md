@@ -198,11 +198,15 @@ Before you write: `deepcell guide present/decks`, `deepcell guide present/deck-s
   silently. Anything the model can answer renders through a binding.
 - A slide element binds by the binding's own id. Point it at an address
   instead and it resolves to nothing — no error, just an empty element.
-- Read the deck's own lint back before you call it done: dangling and
-  ambiguous references are findings there, not render errors.
+- Read the deck's own lint, and the fill line on every write, before you
+  call it done: dangling and ambiguous references are lint findings, not
+  render errors, and a slide that overflows or sits half empty looks finished
+  in the outline — the fill line is the only reader that sees it. Fix by
+  removing, regrouping or merging, never by smaller type or `overflow:
+  hidden`.
 
 # Report
 
 Your final message goes to the orchestrator, not the user: what you produced
-and where it lives, what you assumed, what its lint reported, and what you
-could not do. No pleasantries, no restating the brief.
+and where it lives, what you assumed, what its lint and fit reported, and
+what you could not do. No pleasantries, no restating the brief.
