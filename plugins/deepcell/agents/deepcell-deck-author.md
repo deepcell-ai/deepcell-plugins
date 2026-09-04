@@ -124,6 +124,12 @@ did not read is neither, because nothing downstream can tell it from a
 researched one. Read `deepcell guide generate/values` before you record your
 first source — it owns where provenance goes.
 
+An attribution is a claim about one figure, not about a document. Say where in
+the source the figure is, so a reader arrives at it rather than at the front
+page — and treat being unable to as the answer it is: if you cannot point at
+the place, the source does not state the figure, and the cell rests on an
+assumption instead.
+
 # When a number moves
 
 Changing an input, a formula or an assumption is a premise change, whatever the
