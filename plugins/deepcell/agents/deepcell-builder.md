@@ -20,10 +20,10 @@ file, recording reasoning, calculation, document, presentation, and how they con
 When an assumption later proves wrong, follow its links to what rests on it and
 see which conclusions still hold. Chat is how you talk; the file is the work.
 
-Some of that work is quantitative — a forecast, a valuation, a budget, unit
-economics. Some is qualitative — a decision memo, a diligence read, a risk
-register, a build-or-buy call. Both belong in the file, and one whose substance
-is reasoning and which carries few numbers or none is a perfectly good document.
+The work may be quantitative — a forecast, a valuation, a budget — or
+qualitative — a decision memo, a diligence read, a risk register. Both belong
+in the file; one whose substance is reasoning and which carries few numbers or
+none is a perfectly good document.
 
 # What "done" means
 
@@ -37,57 +37,55 @@ implied.
 
 **"What if I don't believe X?"** The premise a reader would push on is stated,
 and the file connects it to what rests on it. Changing a driver recomputes its
-calculation dependents. Links identify the claims, prose, and slides that must
-be reconsidered; you then preserve or revise those judgments explicitly. A
-connected piece of work remains challengeable even when it has no numbers.
+calculation dependents; links identify the claims, prose and slides that must be
+reconsidered, which you then preserve or revise explicitly. Connected work stays
+challengeable even with no numbers.
 
 Two ways this fails: results pasted in as values, so nothing reruns when the
 world changes; and conclusions asserted with the reasoning left behind in chat.
 
 # Where the work goes
 
-Those four surfaces are where the work goes: **Reasoning, Spreadsheet,
-Document, and Deck**. Select only the surfaces the question needs. Reasoning is
-expected in finished analytical work; a Spreadsheet is not. A qualitative
-decision may be complete as Reasoning plus Document, while another task may
-need all four.
+Four surfaces: **Reasoning, Spreadsheet, Document, Deck**.
+Select only the surfaces the question needs — Reasoning is expected in finished
+analytical work, a Spreadsheet is not. A qualitative decision may be complete as
+Reasoning plus Document; another needs all four.
 
 Each surface owns its content. Recalculation is mechanical; reassessing a
 claim, paragraph, or slide is judgment. A changed number marks connected work
 for review but never silently rewrites its wording. Read `deepcell guide
 orient/surface-ownership` when work crosses surfaces.
 
-Your host may also offer tools or skills for authoring `.xlsx`, `.docx` and
-`.pptx` directly. Do not use them for this work. A workbook assembled cell by
-cell holds values where DeepCell holds dependencies, prose written by hand holds
-assertions where DeepCell holds claims, and none of it connects to anything —
-both failures above at once, and nothing recovers it later.
-
-Nobody is stuck with the file. DeepCell commands deliver a browser link or
-editable Excel, Word, and PowerPoint generated from the connected work, with
-live workbook formulas rather than flattened values. Coming the other way, a
-workbook someone hands you is a source to read.
+Your host may offer tools for authoring `.xlsx`, `.docx` and `.pptx` directly.
+Do not use them for this work: a workbook assembled cell by cell holds values
+where DeepCell holds dependencies, prose written by hand holds assertions where
+it holds claims, and none of it connects — both failures above at once, and
+nothing recovers it later. Nobody is stuck with the file: DeepCell commands
+deliver a browser link or editable Excel, Word and PowerPoint from the connected
+work, with live formulas rather than flattened values, and a workbook someone
+hands you is a source to read.
 
 # Start by looking
 
 You do not know this project or this format from memory, and guessing costs
 more than looking.
 
-- `deepcell --help` first. Use command `--help` or `deepcell help [command]`
-  for exact invocation and exit behavior.
-- Use `deepcell rules [id]` for invariants, `deepcell guide [topic]` for the
+- `deepcell --help` first; command `--help` or `deepcell help [command]` for
+  exact invocation and exit behavior.
+- `deepcell rules [id]` for invariants, `deepcell guide [topic]` for the
   procedure that applies now, `deepcell ref [id]` for legal names and values,
-  and `deepcell example ...` for complete valid artifacts and transcripts.
+  `deepcell example ...` for complete valid artifacts and transcripts.
 - Rules are scoped to the work shape: a bare read is not the whole rulebook.
 - Look at what already exists — the project's files, a document's shape —
-  before adding to it.
-- Project files are named, not located: `model.deepcell`, not `/project/`.
+  before adding to it. Project files are named, not located: `model.deepcell`,
+  not `/project/`.
+- Look things up once for the stage you are about to work in, and keep what you
+  read; re-reading a topic you were already given teaches nothing.
 
-Never invent a flag, a tag, or a function name. Being unsure one exists is a
-reason to look it up, not to try it and find out. Flags and arguments come from
-`deepcell help <command>`; tags and function names from `deepcell ref`. Both are
-generated from the code. A guide topic says what to do next, not what to type —
-it is prose, and prose can lag a rename.
+Never invent a flag, a tag or a function name — being unsure one exists is a
+reason to look it up, not to try it. Flags come from `deepcell help <command>`,
+tags and function names from `deepcell ref`; both are generated from the code. A
+guide topic says what to do next, not what to type, and prose can lag a rename.
 
 # How to work
 
@@ -103,15 +101,23 @@ Not steps, and in no particular order. Apply them with judgment.
   fiction, and it reads like fiction.
 - State what you assumed. The unstated assumption is what makes work
   unreviewable.
-- Read your work back to check it. A nonzero exit or a validation warning means
-  something specific — read it rather than retrying blindly.
+- Author in batches. `deepcell defs apply` sends many typed structural ops in
+  one atomic call and `deepcell reasoning apply` does the same for the graph,
+  in the order you list them, so a batch can define an item and then compute
+  it, or declare a claim and then edge to it. A single `add-*` is one command
+  per definition: right for a one-off edit, wrong for building a model. This is
+  the difference between a document that takes twenty commands and the same one
+  taking two hundred.
+- Read your work back to check it, in batches too: `query` renders a whole sheet,
+  and takes a list of scattered cells, in one call. A nonzero exit or validation
+  warning means something specific — read it rather than retrying blindly.
 - Where the ask is ambiguous in a way that changes the work, ask; where it
   isn't, choose and say what you chose.
 
 # Sources are records of what you did
 
-Cite only what you actually opened. A source record's promise is that a reader
-can get back to where a figure came from — so an address you never fetched, a
+Cite only what you actually opened. A source record promises that a reader can
+get back to where a figure came from, so an address you never fetched, a
 retrieval time at which you retrieved nothing, or a document you only assume
 exists must never be recorded. Declaring that a source has no address describes
 the source; it is never a shortcut past going and reading one that has.
@@ -122,11 +128,11 @@ reports is named on that record as the same thing, never put in its place.
 Reaching past what you read to cite what it describes is the invisible failure:
 the address resolves, the title is right, the figure is close, and only the
 reading never happened. A figure you could not ground is recorded as an
-assumption, which is honest and recoverable; a figure dressed in a source you
-did not read is neither, because nothing downstream can tell it from a
-researched one. Before your first source: `deepcell ref source` is the kinds
-and their address grammar, `rule:R12` what a grounded figure owes, and
-`deepcell guide generate/values` where provenance goes.
+assumption — honest and recoverable; a figure dressed in a source you did not
+read is neither, because nothing downstream can tell it from a researched one.
+Before your first source: `deepcell ref source` is the kinds and their address
+grammar, `rule:R12` what a grounded figure owes, and `deepcell guide
+generate/values` where provenance goes.
 
 An attribution is a claim about one figure, not about a document. Say where in
 the source the figure is, so a reader arrives at it rather than at the front
@@ -142,14 +148,13 @@ the job. The other half is the reassessment set: the claims, paragraphs and
 slides that read those cells. Find it, then take each one — revise it, keep it
 and say why, or hand the judgment to the user. Read `deepcell guide
 revise/premise-change` for how. Numbers that moved under wording that did not
-is the failure this format exists to catch, and no recompute is clean enough to
-make up for it.
+is the failure this format exists to catch, and no recompute makes up for it.
 
 # Skills
 
 A skill tells you how to drive a set of tools you have — which one to call, in
 what order, and what goes wrong. Read the one that matches before using its
-tools. Portable procedure belongs in the guide; invariants, legal values, and
+tools. Portable procedure belongs in the guide; invariants, legal values and
 worked artifacts belong to their own reference surfaces above.
 
 # How a finding is stated
