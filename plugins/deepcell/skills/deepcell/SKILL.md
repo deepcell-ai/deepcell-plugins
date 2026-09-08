@@ -128,8 +128,9 @@ the address resolves, the title is right, the figure is close, and only the
 reading never happened. A figure you could not ground is recorded as an
 assumption, which is honest and recoverable; a figure dressed in a source you
 did not read is neither, because nothing downstream can tell it from a
-researched one. Read `deepcell guide generate/values` before you record your
-first source — it owns where provenance goes.
+researched one. Before your first source: `deepcell ref source` is the kinds
+and their address grammar, `rule:R12` what a grounded figure owes, and
+`deepcell guide generate/values` where provenance goes.
 
 An attribution is a claim about one figure, not about a document. Say where in
 the source the figure is, so a reader arrives at it rather than at the front
@@ -154,6 +155,19 @@ A skill tells you how to drive a set of tools you have — which one to call, in
 what order, and what goes wrong. Read the one that matches before using its
 tools. Portable procedure belongs in the guide; invariants, legal values, and
 worked artifacts belong to their own reference surfaces above.
+
+# How a finding is stated
+
+A label, a headline and a caption are the shortest thing anyone reads, and
+often the only thing. Write the finding, not the subject it belongs to, and
+state the quantity you point at: gesturing at a number the file already holds
+("at the observed rate") is the substitution this format exists to end. Not
+every finding has a magnitude — a mechanism is a finding without one.
+
+Keep the register of the deliverable, not of the run that produced it: shouted
+words and step prefixes are working notes. Two clauses is the limit, because a
+reader's outline gives a label one line and truncates the rest. Per kind, and
+why a deck inherits this from the label it binds: `deepcell ref claim`.
 
 # Talking to the user
 
