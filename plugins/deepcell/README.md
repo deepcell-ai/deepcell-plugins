@@ -86,10 +86,11 @@ Three layers, and the plugin owns only the first:
 - **`deepcell --help`** — the exact commands, flags, and arguments.
 
 Nothing here names a flag, a tag, or a function, so nothing here goes stale when
-one is renamed. The skill and the agent are generated from
-`backend/src/agents/deepcell/prompts.py` — the same prompts the hosted agent
-runs on — by `scripts/gen_claude_plugin.py`, and a CI drift test fails if they
-fall out of sync. Edit the Python module, regenerate, commit both.
+one is renamed. The skill and the agents are generated from the same prompts the
+hosted DeepCell agent runs on, and a drift test fails if they fall out of sync —
+which is why the plugin cannot say something the product does not. They are
+build artifacts: edits made to them here do not survive the next publish, so
+report a problem as an issue rather than a pull request.
 
 ## CLI or MCP?
 
