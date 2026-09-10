@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "deepcell",
   "displayName": "DeepCell",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Put your ideas, calculations, documents, and slides into .deepcell files. These files remember how all the parts are connected. If you change one idea, you can quickly see how it affects the whole work. Right now, the way to open the file is by clicking the link the agent gives you. You can also turn it into Excel, Word, or PowerPoint files that you can still edit. Drives the deepcell CLI from Claude Code.",
   "author": {
     "name": "DeepCell",
