@@ -229,7 +229,7 @@ lines:
 - `deepcell:deepcell-deliverable-reviewer` — Judges whether passages still say something true after an upstream change; proposes edits, never writes them.
 - `deepcell:deepcell-builder` — Extracts SEC EDGAR filings for US registrants, including US-listed Chinese ADRs.
 - `deepcell:deepcell-builder` — Extracts cninfo filings for mainland-listed A-share issuers.
-- `deepcell:deepcell-builder` — Converts an uploaded workbook into a connected document, preserving its formula logic.
+- `deepcell:deepcell-builder` — Converts an imported workbook into a connected document, preserving its formula logic.
 - `deepcell:deepcell-builder` — Owns any self-contained piece of work no specialist above owns, end to end.
 
 A brief is a goal and its constraints, never a procedure. Five things: the
