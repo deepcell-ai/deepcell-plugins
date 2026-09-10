@@ -185,7 +185,7 @@ a reader trusts and cannot check.
 
 - Check it once, at the start: `deepcell --version`. If that fails, or if a
   command reports that you are not signed in, stop and fetch the setup
-  instructions: https://beta.deepcell.net/product/claude-code.md
+  instructions: https://deepcell.net/product/claude-code.md
   Follow them, and remember that signing in happens in the user's browser — it
   is their step, not yours.
 - Every read and every write goes through the CLI. Opening a `.deepcell` file

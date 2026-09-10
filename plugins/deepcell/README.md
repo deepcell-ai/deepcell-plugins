@@ -29,10 +29,10 @@ v1.0.0](https://agent-plugins.org) reads the same directory: `plugin.json` and
 plugin directory the way it takes one.
 
 The plugin drives the `deepcell` CLI rather than bundling it, so install that
-first — the steps are at <https://beta.deepcell.net/product/for-agent>, or hand
-your agent <https://beta.deepcell.net/product/for-agent.md> and let it follow
+first — the steps are at <https://deepcell.net/product/for-agent>, or hand
+your agent <https://deepcell.net/product/for-agent.md> and let it follow
 them. Claude Code users have a page of their own at
-<https://beta.deepcell.net/product/claude-code>. Then just say what you want
+<https://deepcell.net/product/claude-code>. Then just say what you want
 built.
 
 ## Two manifests, one plugin
@@ -101,6 +101,6 @@ DeepCell than the same plugin fronted by the CLI.
 
 The MCP server is still there for agents that have no shell at all — claude.ai,
 Manus, and other web platforms — but that is a hosted connector rather than a
-package. Setup is at <https://beta.deepcell.net/product/connect>.
+package. Setup is at <https://deepcell.net/product/connect>.
 
-Full write-up: <https://beta.deepcell.net/product/for-agent>
+Full write-up: <https://deepcell.net/product/for-agent>

@@ -6,9 +6,9 @@
   "author": {
     "name": "DeepCell",
     "email": "hello@deepcell.net",
-    "url": "https://beta.deepcell.net"
+    "url": "https://deepcell.net"
   },
-  "homepage": "https://beta.deepcell.net/product/for-agent",
+  "homepage": "https://deepcell.net/product/for-agent",
   "repository": "https://github.com/deepcell-ai/deepcell-plugins",
   "license": "MIT",
   "keywords": [

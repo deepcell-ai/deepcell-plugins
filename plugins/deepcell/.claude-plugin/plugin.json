@@ -7,9 +7,9 @@
   "author": {
     "name": "DeepCell",
     "email": "hello@deepcell.net",
-    "url": "https://beta.deepcell.net"
+    "url": "https://deepcell.net"
   },
-  "homepage": "https://beta.deepcell.net/product/claude-code",
+  "homepage": "https://deepcell.net/product/claude-code",
   "repository": "https://github.com/deepcell-ai/deepcell-plugins",
   "license": "MIT",
   "keywords": [

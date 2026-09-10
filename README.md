@@ -18,9 +18,9 @@ copies are identical.
 
 The plugin ships one skill and no MCP server: it drives the `deepcell` CLI
 rather than bundling it, so install the CLI first. Full instructions are at
-<https://beta.deepcell.net/product/for-agent>, in plain markdown for an agent at
-<https://beta.deepcell.net/product/for-agent.md>, and for Claude Code
-specifically at <https://beta.deepcell.net/product/claude-code>.
+<https://deepcell.net/product/for-agent>, in plain markdown for an agent at
+<https://deepcell.net/product/for-agent.md>, and for Claude Code
+specifically at <https://deepcell.net/product/claude-code>.
 
 ## About this repository
 

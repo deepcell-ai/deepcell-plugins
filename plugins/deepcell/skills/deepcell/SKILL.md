@@ -193,12 +193,12 @@ a reader trusts and cannot check.
 - Check it once, at the start: `deepcell --version`. If that fails — the
   command is missing, or it is on PATH but will not run — install it, the one
   setup step this skill cannot have done for you:
-  `curl -LsSf https://beta.deepcell.net/install.sh | sh` on macOS and Linux,
-  `irm https://beta.deepcell.net/install.ps1 | iex` in Windows PowerShell. The installer
+  `curl -LsSf https://deepcell.net/install.sh | sh` on macOS and Linux,
+  `irm https://deepcell.net/install.ps1 | iex` in Windows PowerShell. The installer
   handles PATH and verifies itself; run `deepcell --version` again afterwards.
 - If a command reports that you are not signed in, stop and fetch the setup
-  instructions: https://beta.deepcell.net/product/for-agent.md
-  In Claude Code, https://beta.deepcell.net/product/claude-code.md
+  instructions: https://deepcell.net/product/for-agent.md
+  In Claude Code, https://deepcell.net/product/claude-code.md
   covers the same ground for that host.
   Follow them, and remember that signing in happens in the user's browser — it
   is their step, not yours.

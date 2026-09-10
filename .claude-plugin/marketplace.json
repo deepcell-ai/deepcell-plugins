@@ -3,7 +3,7 @@
   "owner": {
     "name": "DeepCell",
     "email": "hello@deepcell.net",
-    "url": "https://beta.deepcell.net"
+    "url": "https://deepcell.net"
   },
   "metadata": {
     "description": "DeepCell plugins for Claude Code — build models and memos that record the reasoning, the calculations, the document and the deck together with the links between them, so when an assumption changes you can see which conclusions still hold.",
@@ -27,7 +27,7 @@
         "name": "DeepCell",
         "email": "hello@deepcell.net"
       },
-      "homepage": "https://beta.deepcell.net/product/claude-code",
+      "homepage": "https://deepcell.net/product/claude-code",
       "repository": "https://github.com/deepcell-ai/deepcell-plugins",
       "license": "MIT"
     }
