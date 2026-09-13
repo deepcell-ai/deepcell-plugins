@@ -69,7 +69,8 @@ skill says so.
 Each agent's one-line description is the same roster line the skill's "Who does
 what" block carries — one source (`SPECIALIST_ROSTER` in the prompt module),
 rendered everywhere. Filing and workbook extraction have no dedicated agent
-here; `deepcell-builder` does that work reading `deepcell guide ingest/tabular`.
+here; `deepcell-builder` does that work reading `deepcell guide ingest/tabular`
+(or `ingest/model-workbook` for a formula-bearing model).
 
 Claude Code launches a plugin's agents as `<plugin>:<agent>`, so the name the
 Task tool accepts is `deepcell:deepcell-researcher`, not `deepcell-researcher`
