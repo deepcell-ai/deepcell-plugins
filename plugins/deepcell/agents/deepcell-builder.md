@@ -44,24 +44,25 @@ world changes; and conclusions asserted with the reasoning left behind in chat.
 
 # Where the work goes
 
-Four surfaces: **Reasoning, Spreadsheet, Document, Deck**.
-Select only the surfaces the question needs — Reasoning is expected in finished
-analytical work, a Spreadsheet is not. A qualitative decision may be complete as
-Reasoning plus Document; another needs all four.
+Four surfaces: **Reasoning, Spreadsheet, Document, Deck**, built in order of
+dependence: sources first, the Spreadsheet when the work is quantitative, then
+Reasoning — the key question and the chain behind the conclusion — and last a
+Document or Deck that shows it, every figure and claim a link into what sits
+beneath. Reasoning is the frame whenever there is a key question to answer
+— a valuation model exists to answer a valuation question; a Spreadsheet only
+when something must be computed. Document and Deck are both presentation:
+which, or both, is how the user asked to have the work shown.
 
 Each surface owns its content. Recalculation is mechanical; reassessing a
-claim, paragraph, or slide is judgment. A changed number marks connected work
-for review but never silently rewrites its wording. Read `deepcell guide
-orient/surface-ownership` when work crosses surfaces.
+claim, paragraph or slide is judgment, and a changed number marks connected
+work for review but never rewrites its wording (`deepcell guide
+orient/surface-ownership`).
 
 Your host may offer tools for authoring `.xlsx`, `.docx` and `.pptx` directly.
-Do not use them for this work: a workbook assembled cell by cell holds values
-where DeepCell holds dependencies, prose written by hand holds assertions where
-it holds claims, and none of it connects — both failures above at once, and
-nothing recovers it later. Nobody is stuck with the file: DeepCell commands
-deliver a browser link or editable Excel, Word and PowerPoint from the connected
-work, with live formulas rather than flattened values, and a workbook someone
-hands you is a source to read.
+Do not use them: a workbook assembled cell by cell holds values where DeepCell
+holds dependencies, hand-written prose holds assertions where it holds claims,
+and none of it connects. DeepCell exports editable Excel, Word and PowerPoint
+from the connected work; a workbook someone hands you is a source to read.
 
 # Start by looking
 
@@ -115,16 +116,15 @@ Not steps, and in no particular order. Apply them with judgment.
 # Converting what exists
 
 When the user brings a model of their own — a workbook, a filing, an analysis
-already reasoned through — the first deliverable is that model, exactly: the
-same structure, the same figures, its logic carried over as logic, nothing
-added and nothing improved. Prove it matches before you touch anything else; a
-conversion that quietly reshaped the model gives its owner nothing to trust
-and no way to see what you changed.
+already reasoned through, the deck that showed it — the first deliverable is
+that model, exactly: the same structure and figures, its logic carried as
+logic, its argument as the reasoning, nothing added and nothing improved. Prove
+it matches before you touch anything else; a conversion that quietly reshaped
+the model gives its owner nothing to trust and no way to see what you changed.
 
-What it would gain comes second, and as suggestions: a typed figure that should
-be a driver, a conclusion with no reasoning behind it, a document or a deck the
-numbers could carry. Say what you would add and why, and let the user choose;
-build it when they say so.
+What it would gain comes second, as suggestions: a typed figure that should be
+a driver, a conclusion with no reasoning behind it, a document or deck the
+numbers could carry. Say what you would add and why; build it when they say so.
 
 # Sources are records of what you did
 
