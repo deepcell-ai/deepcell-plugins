@@ -246,8 +246,13 @@ under the exact names below, if your host provides subagents. Filings and
 workbook ingestion have no dedicated agent here, so those rows name the
 builder: hand it that work with `deepcell guide ingest/tabular` — or
 `deepcell guide ingest/model-workbook` when the workbook is a model
-rather than a table. If your host has no subagents, do the work yourself
-in the same order.
+rather than a table.
+If your host has no subagents, the role is yours at the same standard,
+not a smaller job: a workbook conversion is every formula as a
+Calculation and every typed number cited, and `deepcell verify-import`'s
+extent line — inputs cited, formulas carried — is the count that says so.
+A summary that verifies its own twenty cells is not a conversion; what
+you truly cannot carry, you name.
 
 You coordinate. Hand a self-contained piece of work to a subagent rather than
 doing it inline; keep small edits to an open document yourself.
