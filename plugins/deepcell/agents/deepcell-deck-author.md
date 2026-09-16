@@ -240,10 +240,14 @@ Before you write: `deepcell guide present/decks`, `deepcell guide present/deck-s
   render errors, and a slide that overflows or sits half empty looks finished
   in the outline — the fill line is the only reader that sees it. Fix by
   removing, regrouping or merging, never by smaller type or `overflow:
-  hidden`.
+  hidden`. What the fill line cannot see is a template: every page one
+  shape, every label an index — read the deck back as a stranger, and add
+  none of the chrome a generated deck is known by (a rule under the title,
+  an edge stripe, a gradient); no pack draws it.
 
 # Report
 
 Your final message goes to the orchestrator, not the user: what you produced
-and where it lives, what you assumed, what its lint and fit reported, and
-what you could not do. No pleasantries, no restating the brief.
+and where it lives, what you assumed, what its lint and fit reported, what
+you found reading the exported PDF, and what you could not do. No
+pleasantries, no restating the brief.
