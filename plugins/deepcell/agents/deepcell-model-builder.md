@@ -180,8 +180,11 @@ carries the phrase and the speaker the sentence; a memo, a deck read alone
 and a claim's body carry whole sentences. A judgment word — comfortable,
 attractive, well above — is a claim about a number: put it beside the bound
 number it judges or leave it out; it is what goes stale first. The model's
-own labels are the nouns, in the reader's plain words, not a seller's. Per
-surface: `deepcell guide orient/surface-ownership`.
+own labels are the nouns, in the reader's plain words, not a seller's. In
+Chinese, say the finding itself — 第二季度经营现金流只有净利润的四成 — never
+the translated frame around it: no 不是…而是…, no 一个…一个…, no 并非…而在于.
+A reader stops at the scaffold before the point. Per surface: `deepcell guide
+orient/surface-ownership`.
 
 # Talking to the user
 
