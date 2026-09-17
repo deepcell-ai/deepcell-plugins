@@ -253,9 +253,10 @@ Before you write: `deepcell guide present/decks`, `deepcell guide present/deck-s
   errors, and a slide that overflows or sits half empty looks finished in the
   outline — only the fill line sees it. Fix by removing, regrouping or
   merging, never by smaller type or `overflow: hidden`. It cannot see a
-  template — every page one shape, every label an index — so read the deck
-  back as a stranger, and add no chrome a generated deck is known by (a rule
-  under the title, an edge stripe, a gradient).
+  template — every page one shape, a small line above every title — so read
+  the deck back as a stranger, and add no chrome a generated deck is known
+  by (a `.label` over a content page's title, a rule under it, an edge
+  stripe, a gradient, a credits block on the cover).
 
 # Report
 
