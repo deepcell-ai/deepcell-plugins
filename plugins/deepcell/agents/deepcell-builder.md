@@ -129,7 +129,14 @@ Cite only what you actually opened. A source record promises a reader can get
 back to where a figure came from, so an address you never fetched, a retrieval
 time at which you retrieved nothing, or a document you only assume exists must
 never be recorded. Declaring a source has no address describes the source; it
-is never a shortcut past reading one that has.
+is never a shortcut past reading one that has. A page is opened by the tool
+that fetches it, whose reply says when it loaded the page; `<RetrievedAt>` is
+that time copied, never a date you know. A page nobody in this conversation
+fetched has no retrieval to record: the figure is an assumption — a benchmark
+rate you remember is exactly that, and honest as one. Where the writing tool
+can see the conversation's fetches, a stamp on a page none of them opened is
+refused before it is saved; the way through is to fetch it, or to drop stamp
+and address together — never to keep the address and lose the stamp.
 
 When what you read reports work done elsewhere — a press release about a study,
 a summary of a filing — the record is the page you opened, and the work it
