@@ -230,12 +230,32 @@ trusts and cannot check.
 
 `deepcell` is a command-line program — run it the way this host runs commands.
 
-- Check it once, at the start: `deepcell --version`. If that fails — the
-  command is missing, or it is on PATH but will not run — install it, the one
-  setup step this skill cannot have done for you:
-  `curl -LsSf https://deepcell.net/install.sh | sh` on macOS and Linux,
-  `irm https://deepcell.net/install.ps1 | iex` in Windows PowerShell. The installer
-  handles PATH and verifies itself; run `deepcell --version` again afterwards.
+- Check it once, at the start: `deepcell --version`. A version printed means
+  it is installed; the CLI says on its own when a newer one is published, and
+  `deepcell upgrade check` asks the index now.
+- If the bare command fails, that is not yet "not installed" — it is one of
+  four things, and only one of them is fixed by installing.
+  Never infer that DeepCell is uninstalled because a bare command failed —
+  least of all in a sandbox. Look for the file where an install lands
+  (`~/.local/bin/deepcell`; on Windows `$env:USERPROFILE\.local\bin\deepcell.exe`
+  or the Scripts directory of a per-user pip install;
+  `python3 -m deepcell_cli --version` needs no PATH at all) and run it by
+  that path. It runs: it is installed and merely off PATH — use the path
+  for this task. It exists and the host refuses to run it: it is installed
+  and blocked — ask for permission or run it from a shell that may, and do
+  not reinstall. It runs but is behind: the installer upgrades it. Only
+  when there is no file is it missing.
+- The installer is the one setup step this skill cannot have done for you,
+  and it is safe to run over any of those four: it looks for a copy on PATH
+  *and* where an install lands, runs what it finds by absolute path, keeps a
+  current copy, upgrades an outdated one, refuses to reinstall one the host
+  will not execute, and ends with one line you can read —
+  `deepcell-install: state=… version=… dir=…`. On macOS and Linux:
+  `curl -LsSf https://deepcell.net/install.sh | sh`
+  In Windows PowerShell, keep the directory it returns and run by that path,
+  because a PATH the installer writes reaches new sessions only — the host
+  you are running in keeps the environment it started with:
+  `$bin = irm https://deepcell.net/install.ps1 | iex; & (Join-Path $bin 'deepcell.exe') --version`
 - If a command reports that you are not signed in, stop and fetch the setup
   instructions: https://deepcell.net/product/for-agent.md
   In Claude Code, https://deepcell.net/product/claude-code.md

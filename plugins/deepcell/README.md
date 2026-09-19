@@ -35,6 +35,12 @@ them. Claude Code users have a page of their own at
 <https://deepcell.net/product/claude-code>. Then just say what you want
 built.
 
+If your agent reports `deepcell` as "not found", that is not yet "not
+installed" — the copy may be off `PATH`, or the sandbox may refuse to execute
+it. The skill says how to tell, and the installer is safe to run over any
+existing copy: it keeps a current one, upgrades an outdated one, and never
+reinstalls one the host will not run.
+
 ## Two manifests, one plugin
 
 This directory is read by two plugin formats, and neither reads the other's

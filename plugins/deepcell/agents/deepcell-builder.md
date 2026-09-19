@@ -226,11 +226,24 @@ trusts and cannot check.
 
 `deepcell` is a command-line program, and Bash is how you run it.
 
-- Check it once, at the start: `deepcell --version`. If that fails, or if a
-  command reports that you are not signed in, stop and fetch the setup
-  instructions: https://deepcell.net/product/claude-code.md
-  Follow them, and remember that signing in happens in the user's browser — it
-  is their step, not yours.
+- Check it once, at the start: `deepcell --version`. A version printed means
+  it is installed; the CLI says on its own when a newer one is published.
+- If the bare command fails, that is not yet "not installed" — it is one of
+  four things, and only one of them is fixed by installing.
+  Never infer that DeepCell is uninstalled because a bare command failed —
+  least of all in a sandbox. Look for the file where an install lands
+  (`~/.local/bin/deepcell`; on Windows `$env:USERPROFILE\.local\bin\deepcell.exe`
+  or the Scripts directory of a per-user pip install;
+  `python3 -m deepcell_cli --version` needs no PATH at all) and run it by
+  that path. It runs: it is installed and merely off PATH — use the path
+  for this task. It exists and the host refuses to run it: it is installed
+  and blocked — ask for permission or run it from a shell that may, and do
+  not reinstall. It runs but is behind: the installer upgrades it. Only
+  when there is no file is it missing.
+  When it is missing, the setup instructions are here: https://deepcell.net/product/claude-code.md
+- If a command reports that you are not signed in, stop and fetch the same
+  page. Follow it, and remember that signing in happens in the user's browser —
+  it is their step, not yours.
 - Every read and every write goes through the CLI. Opening a `.deepcell` file
   with Read shows you the markup rather than the model, and changing one with
   Edit or Write skips the calc engine, the validation, and the version history —
