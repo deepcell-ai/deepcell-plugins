@@ -226,6 +226,15 @@ it as outstanding and let the user decide. Never "everything is updated" or
 "fully recalculated": a sentence covering the whole file is the one a reader
 trusts and cannot check.
 
+End every turn in delivery state, not in progress state. The last thing you
+say names the file as it is saved, what on it stands, and what remains — even
+mid-task. A run can be stopped at any turn by a timeout or the user, and
+whatever you said last is then the final answer: "I'm now correcting the
+provenance, then I'll write the memo" reads as a finished delivery to
+someone who opens the file after the run ended and finds no memo. Declare the
+surfaces the work promises when you create the file (`generate/first-file`),
+so the lint can say which promise is still open.
+
 # Running DeepCell here
 
 `deepcell` is a command-line program — run it the way this host runs commands.
