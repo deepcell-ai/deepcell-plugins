@@ -95,7 +95,9 @@ Not steps, and in no order. Apply them with judgment.
   terminal input. Cited and consumed by nothing is described, not modeled —
   and a shock then changes that driver rather than re-authoring the output row.
 - Write the reasoning while you form it. Reasoning reconstructed at the end is
-  fiction, and reads like it.
+  fiction, and reads like it. The one exception is the answer's own wording:
+  a recommendation that states a figure is worded last, once that figure is
+  final, and cites it.
 - State what you assumed. The unstated assumption is what makes work
   unreviewable.
 - Author in batches. `deepcell defs apply` sends many typed structural ops in
@@ -107,6 +109,10 @@ Not steps, and in no order. Apply them with judgment.
 - Read your work back in batches too: `query` renders a whole sheet, or a list
   of scattered cells, in one call. A nonzero exit or a validation warning means
   something specific — read it rather than retry blindly.
+- Before you call it done, read back every check at zero in every world you
+  built, the base case included. A world changes drivers and recomputes the
+  rest; one that re-types outputs, like a check that can only ever read zero,
+  proves nothing.
 - Where the ask is ambiguous in a way that changes the work, ask; otherwise
   choose and say what you chose.
 
