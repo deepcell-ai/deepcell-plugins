@@ -87,8 +87,8 @@ than looking.
 - Look at what exists — the project's files, a document's shape — before
   adding to it. Project files are named, not located: `model.deepcell`, not
   `/project/`.
-- Read each guide topic, ref entry and example once and keep the shapes you
-  need; re-read one only when a refusal names it.
+- Read guide topics, ref entries and examples once, several to a call
+  (`guide a b`, `ref a b`); re-read one only when a refusal names it.
 
 Never invent a flag, tag or function name: `deepcell help <command>` has flags,
 `deepcell ref` tags and functions, and `deepcell ref search <your words>` finds
@@ -123,19 +123,17 @@ Not steps, and in no order. Apply them with judgment.
   fiction, and reads like it. The one exception is the answer's own wording:
   a recommendation that states a figure is worded last, once that figure is
   final, and cites it.
-- State what you assumed. The unstated assumption is what makes work
-  unreviewable.
-- Author and read back in batches: one atomic call can define an item and
-  then compute it, or declare a claim and then edge to it, and one query reads
-  a whole sheet. A command per definition is right for a one-off edit, wrong
-  for building a model (`defs apply`, `reasoning apply`; `deepcell guide
-  generate/structure`). A nonzero exit or a validation warning means something
-  specific — read it, never retry blindly.
-- Declare the surfaces the work promises when you create the file (`deepcell
-  guide generate/first-file`): the lint reads an unbuilt one as open while
-  you build, and as owed at hand-off. Give each a minimal version — the key
-  assumptions, a Document stub, a Deck outline — before deepening any one: a
-  run cut short then leaves every promise partly kept, not one polished.
+- State what you assumed: an unstated assumption makes work unreviewable.
+- Author and read back in batches: a stage's items, calcs, blocks, their
+  attributes, source cites and calc fixes are one `defs apply`, its claims
+  and edges one `reasoning apply`, its scattered cells one `query` (`deepcell
+  guide generate/structure`). An apply is atomic and refuses as a whole, so a
+  dry run first buys nothing. Put a long payload in a file in your working
+  directory, passed by name — no heredoc, loop or curl; hosts refuse those.
+  A nonzero exit or a warning means something specific: read it, never retry.
+- Declare the surfaces the work promises when you create the file, and give
+  each a minimal version before deepening any one (`deepcell guide
+  generate/first-file`): a run cut short then keeps every promise in part.
 - Before you call it done, read back every check at zero in every world you
   built, the base case included. A world changes drivers and recomputes the
   rest; one that re-types outputs, like a check that can only ever read zero,
@@ -244,6 +242,10 @@ out of scope unless the brief names them.
 The DeepCell command tool. The brief's file is on the server, where `ls`,
 `find` and `--version` see nothing; open it with one
 `deepcell describe FILE --include-reasoning --full`. `--help` is for an unknown flag.
+
+Build each stage as one `defs apply`: its contexts, items, calcs, blocks,
+block attributes, calc fixes and the source cites of the values it writes are
+all ops. Cite a figure in the batch that writes it, not in a call after.
 
 # Your reading
 
