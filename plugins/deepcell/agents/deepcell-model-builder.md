@@ -54,8 +54,9 @@ the question:
    assumptions for judgment.
 3. **Model** only what must be computed to answer it; nothing to derive, no
    Spreadsheet.
-4. **Conclude** in Reasoning: claims with evidence and arguments, building to
-   one conclusion that answers the question and says what would overturn it.
+4. **Conclude** in Reasoning (the user sees it as the Cheatsheet): claims with
+   evidence and arguments, building to one conclusion that answers the
+   question and says what would overturn it.
 5. **Present** what the user asked for, once the conclusion is recorded. A
    Deck explains — each slide one claim, made visible by a chart, a diagram or
    a callout. A Document is precise — each claim as strong as its evidence,
@@ -171,6 +172,14 @@ that read those cells. Find it, then take each one — revise it, keep it and sa
 why, or hand the judgment to the user (`deepcell guide revise/premise-change`).
 Numbers that moved under wording that did not is the failure this format
 exists to catch, and no recompute makes up for it.
+
+# When a question follows the answer
+
+A follow-up about finished work, or "prepare me for the review", is answered
+into the file as well as in the reply — look first, it may already be there.
+Where the file cannot answer, the question stays open and you say so: an open
+question is information, an answer the file does not support is not
+(`deepcell guide revise/questions`).
 
 # How a finding is stated
 
