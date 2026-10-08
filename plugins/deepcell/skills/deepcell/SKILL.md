@@ -63,9 +63,10 @@ the question:
    Spreadsheet.
 4. **Conclude** in Reasoning: claims with evidence and arguments, building to
    one conclusion that answers the question and says what would overturn it.
-5. **Present** last. A Deck explains — each slide one claim, made visible by a
-   chart, a diagram or a callout. A Document is precise — each claim as strong
-   as its evidence, the limits stated. Which, or both, the user asked for.
+5. **Present** what the user asked for, once the conclusion is recorded. A
+   Deck explains — each slide one claim, made visible by a chart, a diagram or
+   a callout. A Document is precise — each claim as strong as its evidence,
+   the limits stated.
 
 Each step links into the ones before it, and each surface owns its content.
 Recalculation is mechanical; a changed assumption also marks the connected
@@ -93,12 +94,27 @@ than looking.
 - Look at what exists — the project's files, a document's shape — before
   adding to it. Project files are named, not located: `model.deepcell`, not
   `/project/`.
-- Look things up once per stage and keep what you read; re-reading a topic
-  you were given teaches nothing.
+- Read each guide topic, ref entry and example once and keep the shapes you
+  need; re-read one only when a refusal names it.
 
-Never invent a flag, a tag or a function name: flags come from `deepcell help
-<command>`, tags and function names from `deepcell ref`. A guide topic says
-what to do next, not what to type, and prose can lag a rename.
+Never invent a flag, tag or function name: `deepcell help <command>` has flags,
+`deepcell ref` tags and functions, and `deepcell ref search <your words>` finds
+any of them — and, given a file, its ids by label. Guide prose can lag a rename.
+
+# Reading a document
+
+Ask the document; don't search its text. Three commands answer it:
+
+- The map: `describe` — the frame of sheets, documents, decks and dimensions,
+  its findings, and the command that opens each one further.
+- Any id on it: `ref <file> <id>` — its definition, what reads it, and the
+  command that reads it next.
+- The values: `query` — a cell, a row, scattered cells or a whole sheet.
+
+Read once and keep it: a sheet's query holds every cell on it, a cell's link
+is its address (`deepcell:cell/Item[Context]`), and a file you have not written
+since you described it is unchanged. Grep the file only for what none of these
+report — a text match misses what a scenario or calc gives a cell, and is wrong.
 
 # How to work
 
@@ -123,7 +139,10 @@ Not steps, and in no order. Apply them with judgment.
   generate/structure`). A nonzero exit or a validation warning means something
   specific — read it, never retry blindly.
 - Declare the surfaces the work promises when you create the file (`deepcell
-  guide generate/first-file`), so the lint can say which promise is open.
+  guide generate/first-file`): the lint reads an unbuilt one as open while
+  you build, and as owed at hand-off. Give each a minimal version — the key
+  assumptions, a Document stub, a Deck outline — before deepening any one: a
+  run cut short then leaves every promise partly kept, not one polished.
 - Before you call it done, read back every check at zero in every world you
   built, the base case included. A world changes drivers and recomputes the
   rest; one that re-types outputs, like a check that can only ever read zero,
@@ -272,8 +291,12 @@ workbook ingestion have no dedicated agent here, so those rows name the
 builder: hand it that work with `deepcell guide ingest/tabular` — or
 `deepcell guide ingest/model-workbook` when the workbook is a model
 rather than a table.
-If your host has no subagents, the role is yours at the same standard,
-not a smaller job: a workbook conversion is every formula as a
+If your host has no subagents, or none of this plugin's agents — the
+roster below names agents it cannot launch — the role is yours at the
+same standard, not a smaller job. Read its brief first:
+`deepcell guide role/model-builder`, and likewise
+`role/deck-author`, `role/researcher`, `role/deliverable-reviewer`.
+A workbook conversion is every formula as a
 Calculation and every typed number cited, and `deepcell verify-import`'s
 extent line — inputs cited, formulas carried — is the count that says so.
 A summary that verifies its own twenty cells is not a conversion; what
@@ -302,14 +325,17 @@ goal — naming the key question and the claim the piece serves — the file it
 lives in, what must not change, what is out of scope, what to report back.
 Never guide topics — a specialist's own prompt says what
 it reads — and never the steps: it has the same guide and the same tools you
-do.
+do. Do hand over the facts you hold, so it starts from them instead of
+rediscovering them: the claim ids it serves, the cells they cite, the sheet
+and block ids involved, the style the user asked for, what is already done.
 
-Delegate in the flow's order: frame the key question before the first brief
-and name it there — a conversion's extractor goes first all the same — and
-the Document and Deck follow the conclusion, never beside it.
+Frame the key question first and name it in each brief; converting the user's
+own model goes first. A filing extraction and research start together: a write
+from an older read lands on the newer one unless both touched the same thing.
+Once the conclusion is recorded, brief the Deck and the Document in parallel.
 
-Delegate whole pieces of work, not fragments. Several briefs against one
-document fight each other; one brief that owns the document does not.
+Delegate whole pieces, not fragments: one brief owns one surface. The whole
+Spreadsheet is one model-builder brief; a correction goes back to it.
 
 A premise change is two pieces of work, not one. The edit recomputes; deciding
 which claims, paragraphs and slides still hold is separate work, and seeing it
@@ -326,6 +352,6 @@ or only add to the file?
 Each specialist reads its topics before it writes — and so do you, when a
 role falls to you instead of a subagent:
 
-- `deepcell:deepcell-model-builder`: `deepcell guide orient/concepts`, `deepcell guide generate/structure`, `deepcell guide generate/calcs`, `deepcell guide verify/query-back`
-- `deepcell:deepcell-deck-author`: `deepcell guide present/decks`, `deepcell guide present/deck-style`, `deepcell guide present/charts`
-- `deepcell:deepcell-researcher`: `deepcell guide generate/values`, `deepcell guide revise/reasoning`
+- `deepcell:deepcell-model-builder`: `deepcell guide orient/concepts generate/structure generate/calcs verify/query-back`
+- `deepcell:deepcell-deck-author`: `deepcell guide present/decks present/deck-style present/charts`
+- `deepcell:deepcell-researcher`: `deepcell guide generate/values revise/reasoning`

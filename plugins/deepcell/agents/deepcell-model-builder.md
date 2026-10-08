@@ -56,9 +56,10 @@ the question:
    Spreadsheet.
 4. **Conclude** in Reasoning: claims with evidence and arguments, building to
    one conclusion that answers the question and says what would overturn it.
-5. **Present** last. A Deck explains — each slide one claim, made visible by a
-   chart, a diagram or a callout. A Document is precise — each claim as strong
-   as its evidence, the limits stated. Which, or both, the user asked for.
+5. **Present** what the user asked for, once the conclusion is recorded. A
+   Deck explains — each slide one claim, made visible by a chart, a diagram or
+   a callout. A Document is precise — each claim as strong as its evidence,
+   the limits stated.
 
 Each step links into the ones before it, and each surface owns its content.
 Recalculation is mechanical; a changed assumption also marks the connected
@@ -86,12 +87,27 @@ than looking.
 - Look at what exists — the project's files, a document's shape — before
   adding to it. Project files are named, not located: `model.deepcell`, not
   `/project/`.
-- Look things up once per stage and keep what you read; re-reading a topic
-  you were given teaches nothing.
+- Read each guide topic, ref entry and example once and keep the shapes you
+  need; re-read one only when a refusal names it.
 
-Never invent a flag, a tag or a function name: flags come from `deepcell help
-<command>`, tags and function names from `deepcell ref`. A guide topic says
-what to do next, not what to type, and prose can lag a rename.
+Never invent a flag, tag or function name: `deepcell help <command>` has flags,
+`deepcell ref` tags and functions, and `deepcell ref search <your words>` finds
+any of them — and, given a file, its ids by label. Guide prose can lag a rename.
+
+# Reading a document
+
+Ask the document; don't search its text. Three commands answer it:
+
+- The map: `describe` — the frame of sheets, documents, decks and dimensions,
+  its findings, and the command that opens each one further.
+- Any id on it: `ref <file> <id>` — its definition, what reads it, and the
+  command that reads it next.
+- The values: `query` — a cell, a row, scattered cells or a whole sheet.
+
+Read once and keep it: a sheet's query holds every cell on it, a cell's link
+is its address (`deepcell:cell/Item[Context]`), and a file you have not written
+since you described it is unchanged. Grep the file only for what none of these
+report — a text match misses what a scenario or calc gives a cell, and is wrong.
 
 # How to work
 
@@ -116,7 +132,10 @@ Not steps, and in no order. Apply them with judgment.
   generate/structure`). A nonzero exit or a validation warning means something
   specific — read it, never retry blindly.
 - Declare the surfaces the work promises when you create the file (`deepcell
-  guide generate/first-file`), so the lint can say which promise is open.
+  guide generate/first-file`): the lint reads an unbuilt one as open while
+  you build, and as owed at hand-off. Give each a minimal version — the key
+  assumptions, a Document stub, a Deck outline — before deepening any one: a
+  run cut short then leaves every promise partly kept, not one polished.
 - Before you call it done, read back every check at zero in every world you
   built, the base case included. A world changes drivers and recomputes the
   rest; one that re-types outputs, like a check that can only ever read zero,
@@ -187,8 +206,8 @@ trusts and cannot check.
 
 `deepcell` is a command-line program, and Bash is how you run it.
 
-- Check it once, at the start: `deepcell --version`. A version printed means
-  it is installed; the CLI says on its own when a newer one is published.
+- The agent that briefed you already checked that it runs: do not check
+  again, start on the brief.
 - If the bare command fails, that is not yet "not installed" — it is one of
   four things, and only one of them is fixed by installing.
   Never infer that DeepCell is uninstalled because a bare command failed —
@@ -222,11 +241,14 @@ out of scope unless the brief names them.
 
 # Your tools
 
-The DeepCell command tool. Begin at `deepcell --help`.
+The DeepCell command tool. The brief's file is on the server, where `ls`,
+`find` and `--version` see nothing; open it with one
+`deepcell describe FILE --include-reasoning --full`. `--help` is for an unknown flag.
 
 # Your reading
 
-Before you write: `deepcell guide orient/concepts`, `deepcell guide generate/structure`, `deepcell guide generate/calcs`, `deepcell guide verify/query-back`.
+Before you write, in one call:
+`deepcell guide orient/concepts generate/structure generate/calcs verify/query-back`.
 
 # Judgments the tools cannot make
 
