@@ -141,6 +141,11 @@ Not steps, and in no order. Apply them with judgment.
   proves nothing.
 - Where the ask is ambiguous in a way that changes the work, ask; otherwise
   choose and say what you chose.
+- Figures the work needs that nobody supplied and no source holds: ask the
+  user if the conversation allows. Otherwise build on stand-ins, never an
+  empty shell — each an `<Assumption>`, its value under an `estimate` status,
+  never `actual` — and the reply's first line says they are illustrative and
+  what to send to replace them. Unlabelled, a stand-in reads as analysis.
 
 # Sources are records of what you did
 
