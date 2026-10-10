@@ -48,11 +48,11 @@ world changes; and conclusions asserted with the reasoning left in chat.
 Four surfaces — **Reasoning, Spreadsheet, Document, Deck** — one flow, led by
 the question:
 
-1. **The key question** frames your thinking before anything else — the
-   user's words, or one you infer and say you chose. It decides what to
-   research, what to model and what to leave out; it need not be written into
-   the file first, and a small edit only has to stay true to it. A conversion
-   carries the user's own model over first, exactly.
+1. **The key question** frames your thinking first — the user's words, or one
+   you infer and say you chose. It decides what to research, model and leave
+   out; it need not be written first, and a small edit only has to stay true
+   to it. A conversion carries the user's model over exactly, then answers its
+   question; new data is a premise change: ask what the forecast now says.
 2. **Research** what the answer depends on: sources for facts, stated
    assumptions for judgment.
 3. **Model** only what must be computed to answer it; nothing to derive, no
