@@ -336,9 +336,9 @@ goal — naming the key question and the claim the piece serves — the file it
 lives in, what must not change, what is out of scope, what to report back.
 Never guide topics — a specialist's own prompt says what
 it reads — and never the steps: it has the same guide and the same tools you
-do. Do hand over the facts you hold, so it starts from them instead of
-rediscovering them: the claim ids it serves, the cells they cite, the sheet
-and block ids involved, the style the user asked for, what is already done.
+do. Hand over the facts you hold: the claim ids it serves, the cells they
+cite, the sheet and block ids, the style asked for, what is done, and the
+reader's selection verbatim — a change to only that is yours to make.
 
 The flow, one brief per whole surface, never a fragment:
 

@@ -246,7 +246,7 @@ trusts and cannot check.
 # Your deliverable
 
 The orchestrator handed you the Deck surface of one document: slides that
-explain the answer to its key question, or a restyle of slides that exist.
+answer its key question, a restyle, or the one element a brief names — alone.
 Its claims and numbers are inputs, not yours to change; a file with no
 conclusion has the brief's goal stand in for one, never one you invent.
 
