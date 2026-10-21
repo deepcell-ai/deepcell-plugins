@@ -1,15 +1,15 @@
 <h1 align="center">DeepCell</h1>
 
-<p align="center"><strong>Stop making the same change in every file.</strong></p>
+<p align="center"><strong>Your deadline survival kit.</strong></p>
 
 <p align="center">
-A Claude Code plugin that builds your model, memo and deck as one <code>.deepcell</code> file —<br>
-so when an assumption moves, the work moves with it, and you can see which conclusions still hold.
+A Claude Code plugin that turns your work and ideas into ready-to-use docs, spreadsheets and slides —<br>
+with sources and cheat sheets to help you explain your thinking. One edit updates all your linked content.
 </p>
 
 <p align="center">
   <a href="https://deepcell.net/product/claude-code">Setup guide</a> ·
-  <a href="https://deepcell.net/demo">Try the demo</a> ·
+  <a href="https://deepcell.net/demo">Try a real kit</a> ·
   <a href="https://deepcell.net/story">What's in a file</a> ·
   <a href="https://deepcell.net/product/for-agent">Other agents</a> ·
   <a href="https://github.com/deepcell-ai/deepcell-plugins/issues">Issues</a>
@@ -25,40 +25,40 @@ so when an assumption moves, the work moves with it, and you can see which concl
 
 ## What it does
 
-A valuation, a budget, a due-diligence memo, a board deck. Today each one is
-its own file, and every change means finding the same number in all of them —
-and hoping the reasoning that justified it is still somewhere.
+*Please submit the Q4 forecast by 6pm.* The numbers live in a spreadsheet, the
+findings in a report, the story in slides — and the reasons behind each figure
+in someone's head. Every change means finding the same number in all of them.
 
-Ask Claude Code for the work through DeepCell and it lands in **one
-`.deepcell` file** that keeps four things and how they connect:
+Ask Claude Code for the work through DeepCell and your spreadsheet, report and
+slides come back **woven together in one `.deepcell` file** — a kit:
 
-| Surface | What it holds |
+| In the kit | What it holds |
 | --- | --- |
-| **Model** | The drivers and calculations, dependency-tracked — a growth rate, a cost ratio, a delivery date, and everything computed from them. |
-| **Reasoning** | The thesis, the evidence behind it, the assumptions it rests on, the bear case and the counter — as a map you can follow end to end. |
-| **Document** | The memo that explains the conclusion, citing the numbers rather than retyping them. |
-| **Deck** | The slides that deliver it, bound to the same figures. |
+| **Spreadsheet** | The numbers and calculations, dependency-tracked — a growth rate, a unit price, a delivery date, and everything computed from them. |
+| **Report** | The findings and conclusions, citing the numbers rather than retyping them. |
+| **Slides** | Ready to present or share, bound to the same figures. |
+| **Cheat sheet** | How you reached your conclusions — the evidence, the assumptions, and the answer to the question you will be asked. |
 
-Change one thing and DeepCell follows the links from it. What is certain updates
-automatically; what needs your decision is marked for your call.
+**Make a change. Watch it flow through your work.** *"Still 15%? Make it 20% —
+we just won a big deal."* The growth rate moves, the forecast recalculates, the
+report's sentence and the slide's figure follow, and the cheat sheet's answer
+is rewritten with the new reason attached. What needs your judgment is marked
+for your call rather than decided for you.
 
-```
-A supplier moves battery delivery from 8 weeks to 14.
+**Follow the thread from any number back to its source.** *"Why does the slide
+show 500 when this morning's report said 480?"* The cheat sheet answers: a new
+order for 20 came in at 11:40 — source, *Q3 Sales Orders (Updated).xlsx* — and
+every edit is versioned, so you can see what changed, when, and why.
 
-  12 places depend on that delivery time — timeline, status report, review deck.
-  10 update on their own.
-   2 are yours:  Still commit to the June 30 launch?
-                 Switch to the backup supplier?
-
-  Product margin — unaffected.  Backup supplier qualification — unchanged.
-```
+**Start with your previous work. Weave in the latest data.** Hand it last
+quarter's kit and this quarter's export; it rolls the model forward and keeps
+every conclusion that still holds.
 
 Nobody needs an account, or the file, to read the work: share a link and it
 opens in a browser with every connection intact. Or export editable **Excel,
 Word and PowerPoint** — the workbook with live formulas, not pasted values.
 
-Already used for valuations, budgets, supply-chain plans, research reports and
-due diligence.
+*Deadline met. Time to head home.*
 
 ## Install
 
@@ -93,6 +93,9 @@ until something needs an account. Updates, Windows notes and what to do when
 A goal and its constraints, not a procedure. Claude reaches for the `deepcell`
 skill on its own when a request needs a model or a memo that has to hold up;
 `/deepcell:deepcell` calls it directly.
+
+> Use the Q3 sales data in `./q3-orders.xlsx` to build the Q4 forecast — the
+> spreadsheet, a one-page report and five slides.
 
 > Build a three-year DCF for Acme from the filings in `./filings`. Keep the
 > growth and margin assumptions where I can change them, and record why each
