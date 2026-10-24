@@ -12,6 +12,7 @@ with sources and cheat sheets to help you explain your thinking. One edit update
   <a href="https://deepcell.net/demo">Try a real kit</a> ·
   <a href="https://deepcell.net/story">What's in a file</a> ·
   <a href="https://deepcell.net/product/for-agent">Other agents</a> ·
+  <a href="https://www.producthunt.com/products/deepcell">Product Hunt</a> ·
   <a href="https://github.com/deepcell-ai/deepcell-plugins/issues">Issues</a>
 </p>
 
@@ -19,6 +20,11 @@ with sources and cheat sheets to help you explain your thinking. One edit update
   <a href="https://pypi.org/project/deepcell-cli/"><img alt="deepcell CLI on PyPI" src="https://img.shields.io/pypi/v/deepcell-cli?label=deepcell%20CLI"></a>
   <a href="https://agent-plugins.org"><img alt="Agent Plugins Specification v1.0.0" src="https://img.shields.io/badge/Agent%20Plugins%20Spec-v1.0.0-informational"></a>
   <a href="https://github.com/deepcell-ai/deepcell-plugins/blob/main/LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-lightgrey"></a>
+</p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Mcbq8NkSpUU"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/video.jpg" alt="Watch the DeepCell film on YouTube" width="800"></a><br>
+  <sub>▶ <a href="https://www.youtube.com/watch?v=Mcbq8NkSpUU">Watch the film</a></sub>
 </p>
 
 ---
@@ -31,6 +37,8 @@ in someone's head. Every change means finding the same number in all of them.
 
 Ask Claude Code for the work through DeepCell and your spreadsheet, report and
 slides come back **woven together in one `.deepcell` file** — a kit:
+
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/survival-kit.jpg" alt="Your deadline survival kit: your spreadsheet, report and slides, woven together in one file" width="800"></p>
 
 | In the kit | What it holds |
 | --- | --- |
@@ -45,20 +53,32 @@ report's sentence and the slide's figure follow, and the cheat sheet's answer
 is rewritten with the new reason attached. What needs your judgment is marked
 for your call rather than decided for you.
 
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/change-once.jpg" alt="Change anything once without re-editing your report and slides" width="800"></p>
+
 **Follow the thread from any number back to its source.** *"Why does the slide
 show 500 when this morning's report said 480?"* The cheat sheet answers: a new
 order for 20 came in at 11:40 — source, *Q3 Sales Orders (Updated).xlsx* — and
 every edit is versioned, so you can see what changed, when, and why.
 
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/where-numbers-came-from.jpg" alt="Know where every number came from before anyone asks" width="800"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/cheat-sheet.jpg" alt="Get a cheat sheet that tells you what to say in every meeting" width="800"></p>
+
 **Start with your previous work. Weave in the latest data.** Hand it last
 quarter's kit and this quarter's export; it rolls the model forward and keeps
 every conclusion that still holds.
+
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/reuse-last-quarter.jpg" alt="Reuse last quarter's logic with this quarter's data instead of starting over" width="800"></p>
 
 Nobody needs an account, or the file, to read the work: share a link and it
 opens in a browser with every connection intact. Or export editable **Excel,
 Word and PowerPoint** — the workbook with live formulas, not pasted values.
 
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/any-format.jpg" alt="Send your boss any format they ask for" width="800"></p>
+
 *Deadline met. Time to head home.*
+
+<p align="center"><img src="https://raw.githubusercontent.com/deepcell-ai/deepcell-plugins/main/plugins/deepcell/assets/deadline-met.jpg" alt="Deadline met. Time to head home." width="800"></p>
 
 ## Install
 
