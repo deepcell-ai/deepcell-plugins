@@ -13,6 +13,8 @@ with sources and cheat sheets to help you explain your thinking. One edit update
   <a href="https://deepcell.net/story">What's in a file</a> ·
   <a href="https://deepcell.net/product/for-agent">Other agents</a> ·
   <a href="https://www.producthunt.com/products/deepcell">Product Hunt</a> ·
+  <a href="https://www.linkedin.com/company/deepcell-ai">LinkedIn</a> ·
+  <a href="https://x.com/deepcellonx">X</a> ·
   <a href="https://github.com/deepcell-ai/deepcell-plugins/issues">Issues</a>
 </p>
 
