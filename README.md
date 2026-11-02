@@ -153,16 +153,11 @@ does is rewritten with the reason attached.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| Skill | `deepcell` | The entry point. Same identity and quality bar as the hosted DeepCell orchestrator: what the work is, when it's done, and to look things up rather than guess. |
-| Agent | `deepcell-builder` | Owns one complete piece of work end to end — a filing to ingest, a workbook to convert, a model nobody below owns — and reports back. Gets a goal and constraints, never a procedure. |
-| Agent | `deepcell-model-builder` | The spreadsheet specialist: structure, drivers, calculations, and proving the grid populated. |
-| Agent | `deepcell-deck-author` | The deck specialist: authors or restyles slides over a model that already exists. |
-| Agent | `deepcell-researcher` | The research specialist: answers questions that leave the workspace — diligence, a proposal, a market — and records source-backed findings in the file. |
-| Agent | `deepcell-deliverable-reviewer` | Judges whether passages still say something true after an upstream change; proposes edits, never writes them. |
+| Skill | `deepcell` | The whole plugin. Same identity and quality bar as the hosted DeepCell orchestrator: what the work is, when it's done, and to look things up rather than guess. It takes every role itself — the model, the research, the memo, the deck, the review after a change — at the standard each role's brief in `deepcell guide` sets. |
 
-Claude Code launches a plugin's agents as `<plugin>:<agent>`, so the name the
-Task tool accepts is `deepcell:deepcell-researcher` — the skill's roster prints
-exactly those names.
+There are no agents. The skill does the work in your conversation rather than
+handing pieces to subagents: measured on investment-committee builds, that kept
+more of the model's figures cited, at lower cost.
 
 ## How it stays current
 
@@ -186,9 +181,8 @@ plugin under [Agent Plugins Specification v1.0.0](https://agent-plugins.org):
 client at the plugin directory the way it takes one; in the published
 repository the root and `plugins/deepcell/` each carry an identical copy.
 Claude Code reads its own manifest in `.claude-plugin/` and ignores the
-portable one; a spec client does the reverse. The agents above are a Claude
-Code concept and do not travel — a spec client gets the skill and does the
-work itself. Setup for the general case:
+portable one; a spec client does the reverse. Either way the client gets the
+same skill and does the work itself. Setup for the general case:
 <https://deepcell.net/product/for-agent>, in plain markdown for the agent at
 <https://deepcell.net/product/for-agent.md>.
 
@@ -203,8 +197,7 @@ agent with a shell gets the whole of DeepCell through the CLI. Setup is at
 
 This repository is a **published build artifact**, not the source of truth.
 Its contents are generated from the DeepCell repository, where the plugin's
-skill and agents are in turn generated from the instructions the hosted agent
-runs on — so the plugin can never drift from the product.
+skill is in turn generated from the instructions DeepCell's agents run on.
 
 That means pull requests here cannot be merged: every publish overwrites this
 tree. Bug reports and requests are welcome as **issues on this repository** —
