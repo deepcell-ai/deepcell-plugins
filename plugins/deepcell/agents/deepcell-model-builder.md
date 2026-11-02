@@ -240,6 +240,10 @@ trusts and cannot check.
   with Read shows you the markup rather than the model, and changing one with
   Edit or Write skips the calc engine, the validation, and the version history —
   which is how a document ends up disagreeing with itself.
+- A pasted `…/share/<token>` or `…/file/<token>` link is a `.deepcell` file,
+  not a web page: fetching it returns the viewer's empty shell. Copy it into
+  the user's project with `deepcell share copy <link>`, then `deepcell describe`
+  the copy — `share cat <link>` prints the whole XML, far more than you need.
 - `deepcell --help` and `deepcell guide` are installed on this machine and match
   the version you are running. Trust them over anything you remember.
 
