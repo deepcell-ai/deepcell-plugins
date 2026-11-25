@@ -357,5 +357,5 @@ conclusion, or only add to the file?
 Read a role's topics before you write in it:
 
 - model-builder: `deepcell guide orient/concepts generate/structure generate/calcs verify/query-back`
-- deck-author: `deepcell guide present/decks present/deck-style present/charts`
+- deck-author: `deepcell guide present/decks present/charts`
 - researcher: `deepcell guide generate/values revise/reasoning`
