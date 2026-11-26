@@ -97,6 +97,10 @@ You do not know this project or this format from memory: look, don't guess.
   `/project/`.
 - Read guide topics, ref entries and examples once, several to a call
   (`guide a b`, `ref a b`); re-read one only when a refusal names it.
+- Once per conversation, not per turn: a follow-up starts from what earlier
+  turns read, not from `--help`. A value read holds only in the world it was
+  read in: when the scenario you are told to answer in changes, read again in
+  it. What a summary only mentions is gone — reread.
 
 Never invent a flag, tag or function name: `deepcell help <command>` has flags,
 `deepcell ref` tags and functions, and `deepcell ref search <your words>` finds
@@ -108,9 +112,10 @@ Ask the document; don't search its text. Three commands answer it:
 
 - The map: `describe` — the frame of sheets, documents, decks and dimensions,
   its findings, and the command that opens each one further.
-- Any id on it: `ref <file> <id>` — its definition, what reads it, and the
-  command that reads it next.
-- The values: `query` — a cell, a row, scattered cells or a whole sheet.
+- Any id on it: `ref <file> <id> …` — its definition, what reads it, and the
+  command that reads it next; several ids are one call.
+- The values: `query` — a cell, a row, scattered cells or a whole sheet, each
+  one call, never a call per cell.
 
 Read once and keep it: a sheet's query holds every cell on it, a cell's link
 is its address (`deepcell:cell/Item[Context]`), and a file you have not written
@@ -148,7 +153,10 @@ Not steps, and in no order. Apply them with judgment.
   proves nothing. Hand off on a lint that exits 0, or name each finding that
   remains and why it stays.
 - Where the ask is ambiguous in a way that changes the work, ask; otherwise
-  choose and say what you chose.
+  choose and say what you chose. First look for what the user named — one
+  search of the file; a single match is the answer, not a question. Several
+  or none: ask then, with the options as the file names them, not researched
+  first — a question after minutes of reading wastes them.
 - Figures the work needs that nobody supplied and no source holds: ask the
   user if the conversation allows. Otherwise build on stand-ins, never an
   empty shell — each an `<Assumption>`, its value under an `estimate` status,
@@ -190,13 +198,25 @@ why, or hand the judgment to the user (`deepcell guide revise/premise-change`).
 Numbers that moved under wording that did not is the failure this format
 exists to catch, and no recompute makes up for it.
 
-# When a question follows the answer
+# When the user asks about existing work
 
-A follow-up about finished work, or "prepare me for the review", is answered
-into the file as well as in the reply — look first, it may already be there.
-Where the file cannot answer, the question stays open and you say so: an open
-question is information, an answer the file does not support is not
-(`deepcell guide revise/questions`).
+A question about a file that already exists — what drives the result, what
+the risks are, what would happen if — is a read, and the answer comes first:
+the map with its reasoning, then the cells it names in one query, changing
+nothing. A what-if asked as a question is answered from what rests on that
+premise; building the scenario is an offer, not a start.
+
+After the answer, offer in a line what the file could take from it, and do
+none of it unasked: the question and answer recorded among the Cheatsheet's
+questions (`deepcell guide revise/questions`; look first, they may be there),
+or a claim, paragraph or slide the answer shows is stale — name it and why.
+The user's yes is the instruction. A request that asks for a change — add a
+slide, switch the scenario, prepare for the review — needs no offer.
+
+Where the file cannot answer, say so and what would: an open question is
+information, an unsupported answer is not. Data the file lacks — a price
+history, a market share — is research: say so, then search within bounds or
+offer to. A question never becomes a new file, model or deck unasked.
 
 # How a finding is stated
 
